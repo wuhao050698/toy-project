@@ -28,3 +28,7 @@ print(b)
 model = linear_model.LinearRegression()
 model.fit(X, Y)
 print(model.coef_)
+X1 =X[1000,:]
+print(model.predict(X1))
+print(np.dot(X1,b.T))
+
